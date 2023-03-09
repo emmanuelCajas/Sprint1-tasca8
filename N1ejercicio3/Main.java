@@ -21,7 +21,9 @@ public class Main {
 		nombreMeses.add("noviembre");
 		nombreMeses.add("diciembre");
 		
-		nombreMeses.forEach((nombreMes) -> System.out.println(nombreMes));
+//		nombreMeses.forEach((e) -> System.out.println(e));
+		
+		nombreMeses.stream().forEach(e->System.out.println(e));
 		
 	}
 

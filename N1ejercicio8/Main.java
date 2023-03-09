@@ -12,18 +12,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		
-//		String cad="botella";
-//		
-//		for (Character c : cad.toCharArray()) {
-//			System.out.println(c);
-//			
-//		}
-		
-		InterfaceFuncionalReverse cadena = (reverseCadena) -> {
-			
-			return new StringBuilder(reverseCadena).reverse().toString();
+		InterfaceFuncionalReverse cadena = (e) -> {			
+			return new StringBuilder(e).reverse().toString();
 		};		
+		
+		
 		
 		System.out.println(cadena.reverse("juan"));
 		

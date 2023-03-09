@@ -26,7 +26,7 @@ public class Main {
 		nombreMeses.add("noviembre");
 		nombreMeses.add("diciembre");
 
-		nombreMeses.forEach(System.out::println);
+		nombreMeses.stream().forEach(System.out::println);
 
 	}
 
