@@ -21,9 +21,7 @@ public class Main {
 		lista1.add("noviembre");
 		lista1.add("diciembre");
 		
-//		ArrayList<String> lista2 = new ArrayList<>();		
-//		lista1.forEach((lista) -> {if (lista.contains("o")) lista2.add(lista) ;});
-		
+	
 		lista1.stream().filter(e->e.contains("o")).forEach(System.out::println);
 		
 	}
