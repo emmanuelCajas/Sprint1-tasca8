@@ -24,8 +24,13 @@ public class Main {
 		
 		listaAlumnos.stream().forEach(e->System.out.println(e.getNombre()+" "+ e.getEdad()));
 		
-		List<Alumno> lista1 = listaAlumnos.stream().filter(e->e.getCurso()=="PHP").collect(Collectors.toList());
+		
+		// Ejercicio corregido
+		List<Alumno> lista1 = listaAlumnos.stream().filter(e->e.getNombre().toLowerCase().startsWith("a")).collect(Collectors.toList());
 		lista1.stream().forEach(System.out::println);
+		
+		
+		
 		
 		listaAlumnos.stream().filter(e->e.getNota()>=5).forEach(System.out::println);
 		
